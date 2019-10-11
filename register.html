@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Queue Overflow</title>
+    <link rel="stylesheet" href="register-login.css">
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="register.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-queue">
+            <a href="mainPage.html">
+                <img src="Asset/queueOverflow.png" alt="">
+            </a>
+        </div>
+        <div class="description">
+            <h1>
+                LEARN SHARE CREATE
+            </h1>
+        </div>
+    </div>
+    <nav>
+        <div class="navbar">
+            <div class="menu-search">
+                <div class="nav-item">
+                    <a href="">
+                        <div class="nav-title">
+                            <img src="Asset/More.png" alt="">
+                        </div>
+                    </a>
+                    <div class="nav-wrapper">
+                        <a href="mainPage.html">
+                            <div class="nav-child">Home</div>
+                        </a>
+                        <a href="askQuestion.html">
+                            <div class="nav-child">Ask Question</div>
+                        </a>
+                        <a href="register.html">
+                            <div class="nav-child">Registration</div>
+                        </a>
+                        <div class="nav-child" id="nav-child-more">
+                            More
+                            <div class="nav-wrapper-more">
+                                <a href="ourPartners.html">
+                                    <div class="nav-child">
+                                        Our Partner
+                                    </div>
+                                </a>
+                                <a href="findJobs.html">
+                                    <div class="nav-child">
+                                        Find Jobs
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="Search">
+                    <button type="submit"><i class="fa fa-search"> <img src="Asset/searchButton.svg" alt=""> </i></button>
+                </div>
+            </div>
+            <div class="btn-list">
+                <li>
+                    <a href="login.html">
+                        <button class="login-register-btn">
+                            Login
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        <button class="login-register-btn">
+                            Register
+                        </button>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <div class="register">
+        <div class="form">
+            <form class="register-form">
+                <img src="Asset/person.png" class="logo" alt="">
+                <h1>Register</h1>
+                <p class="fontName">Name</p>
+                <form class="registerName">
+                    <br>
+                    <p><span class="emsg hidden">Name must be at least 4 character</span></p>
+                    <input class="name" type="text" placeholder="Full Name" required />
+                </form>
+
+                <p class="fontEmail">Email</p>
+                <form class="registerEmail">
+                    <br>
+
+                    <p><span class="emsg hidden">Please Enter a Valid Email</span></p>
+                    <input class="email" type="text" placeholder="Email" required />
+                </form>
+
+                <p class="fontPassword">Password</p>
+                <form class="registerPassword">
+                    <br>
+
+                    <p><span class="emsg hidden">Must contain alphanumeric</span>
+                    </p>
+                    <input class="password" type="password" placeholder=" Password" required />
+                </form>
+
+                <p class="fontNumber">Phone Number</p>
+                <form class="registerPhone">
+                    <br>
+
+                    <p><span class="emsg hidden">Must number</span></p>
+                    <input class="phone" type="text" placeholder="Phone Number" required />
+                </form>
+
+                <p class="fontGender">Gender</p>
+                <form class="registerGender">
+                    <div class="gender-regist">
+                        <div class="gender-title">
+                            <p><span class="emsg hidden">Must choose one gender</span></p>
+                        </div>
+                        <div class="gender-radio">
+                            <input class="gender" type="radio" name="gender" value="male"> Male
+                            <input class="gender" type="radio" name="gender" value="female"> Female <br>
+
+                        </div>
+                    </div>
+
+                </form>
+                <button>Create</button>
+                <p class="message">Already have an account ? <a href="login.html">Log in</a></p>
+            </form>
+        </div>
+
+    </div>
+    <div class="footer">
+        Copyright &copy; Queue Overflow
+    </div>
+
+
+</body>
+
+</html>

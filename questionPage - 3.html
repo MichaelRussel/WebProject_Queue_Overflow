@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="questionStyle.css">
+    <title>Queue Overflow</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-queue">
+            <a href="mainPage.html">
+                <img src="Asset/queueOverflow.png" alt="">
+            </a>
+        </div>
+        <div class="description">
+            <h1>
+                LEARN SHARE CREATE
+            </h1>
+        </div>
+    </div>
+    <nav>
+        <div class="navbar">
+            <div class="menu-search">
+                <div class="nav-item">
+                    <a href="">
+                        <div class="nav-title">
+                            <img src="Asset/More.png" alt="">
+                        </div>
+                    </a>
+                    <div class="nav-wrapper">
+                        <a href="mainPage.html">
+                            <div class="nav-child">Home</div>
+                        </a>
+                        <a href="askQuestion.html">
+                            <div class="nav-child">Ask Question</div>
+                        </a>
+                        <a href="register.html">
+                            <div class="nav-child">Registration</div>
+                        </a>
+                        <div class="nav-child" id="nav-child-more">
+                            More
+                            <div class="nav-wrapper-more">
+                                <a href="ourPartners.html">
+                                    <div class="nav-child">
+                                        Our Partner
+                                    </div>
+                                </a>
+                                <a href="findJobs.html">
+                                    <div class="nav-child">
+                                        Find Jobs
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="Search">
+                    <button type="submit"><i class="fa fa-search"> <img src="Asset/searchButton.svg" alt=""> </i></button>
+                </div>
+            </div>
+            <div class="btn-list">
+                <li>
+                    <a href="login.html">
+                        <button class="login-register-btn">
+                            Login
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        <button class="login-register-btn">
+                            Register
+                        </button>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="question-header">
+            <h1>
+                python conditional debug breakpoint one-liner for versions before 3.7 PEP 553 that acts similarly to
+                Perl's $DB::single=1
+            </h1>
+            <div class="ask-btn">
+                <a href="askQuestion.html">
+                    <button class="ask-question-btn">
+                        Ask Question
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="question-header-detailed">
+            <p>
+                In python versions before PEP 553 breakpoint() utility, what is the recommended way to add (ideally a
+                <br>
+                one-liner) code to have a breakpoint that can be ignored upon a condition (e.g. a global debug flag or
+                <br>
+                args.debug flag).
+                <br> <br>
+                If I run this code as: perl code.pl, it will run to completion. If I run this code with: perl -d
+                <br>
+                code.pl, the pdb will stop at the breakpoint line (not before the next line with a my $b = 2;
+                <br>
+                statement) because it contains a 1; statement after the $DB::single=1; statement;
+            </p>
+        </div>
+        <div class="question-detail">
+            <div class="question-information">
+                <div class="question-creator">
+                    <h4>
+                        Asked by: Millheight Anthony
+                    </h4>
+                </div>
+                <div class="question-view">
+                    <h4>
+                        Viewed: 1219 times
+                    </h4>
+                </div>
+                <div class="question-voted">
+                    <h4>
+                        Voted: 181 times
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="question-answer">
+            <div class="answers-num">
+                <h3>
+                    2 Answers
+                </h3>
+            </div>
+            <div class="answers-container">
+                <div class="answers">
+                    <p>
+                        Same as perl, python can be run with -d to set a debug flag:
+                        <br><br>
+                        $ python --help
+                        <br>
+                        [...]
+                        <br>
+                        -d : debug output from parser; also PYTHONDEBUG=x
+                        <br>
+                        [...]
+                    </p>
+                </div>
+                <div class="question-detail">
+                    <div class="question-information">
+                        <div class="question-creator">
+                            <h4>
+                                Answered by: Felix Blue
+                        </div>
+                        <div class="question-view">
+                            <h4>
+                                Viewed: 1194 times
+                            </h4>
+                        </div>
+                        <div class="question-voted">
+                            <h4>
+                                Voted: 98 times
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="answers-container">
+                <div class="answers">
+                    <p>
+                        it gets a little trickier though, since python doesn't allows mutation of the flags structure,
+                        or even creating an instance of it:
+                        <br> <br>
+                        >>> import sys
+                        <br>
+                        >>> sys.flags.debug = 0 # no mutating ...
+                        <br>
+                        Traceback (most recent call last):
+                        <br>
+                        File "stdin", line 1, in module
+                        <br>
+                        TypeError: readonly attribute
+                        <br>
+                        >>> type(sys.flags)() # ... and no instanciating
+                        <br>
+                        Traceback (most recent call last):
+                        <br>
+                        File "input", line 1, in module
+                        <br>
+                        TypeError: cannot create 'sys.flags' instances
+                        <br>
+                    </p>
+                </div>
+                <div class="question-detail">
+                    <div class="question-information">
+                        <div class="question-creator">
+                            <h4>
+                                Answered by: Vincent Strife
+                        </div>
+                        <div class="question-view">
+                            <h4>
+                                Viewed: 594 times
+                            </h4>
+                        </div>
+                        <div class="question-voted">
+                            <h4>
+                                Voted: 88 times
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

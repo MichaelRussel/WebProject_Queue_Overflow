@@ -1,0 +1,266 @@
+.header{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.header img{
+    width: 150px;
+    height: 150px;    
+}
+
+.logo-queue{
+    margin-right: 35%;
+}
+
+.description {
+    white-space: nowrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 3%;
+    color: rgb(215, 86, 8)
+}
+
+nav{
+    width: 100%;
+    border-bottom: 2px solid rgb(238, 152, 103);
+}
+
+.navbar{
+    display: flex;
+    margin-left: 25%;
+    margin-bottom: 2%;
+}
+
+.nav-item{
+    width: 10%;
+    margin: auto;  
+    position: absolute;
+    z-index: 2;
+}
+
+.menu-search{
+    display: inline-flex;
+    margin-right: 27%;
+}
+
+.nav-title{
+    padding: 10px;
+   
+}
+
+.nav-title img{
+    height: 40px;
+    width: 40px;
+    padding-right: 20px;
+    border-right: 2px solid rgb(215, 86, 8);
+}
+
+.nav-item:hover .nav-wrapper{
+    display: block;
+}
+
+#nav-child-more:hover .nav-wrapper-more{
+    display: block;
+}
+
+.nav-wrapper{
+    margin-top: 10px;
+    width: 100%;
+    display: none;
+    background-color:rgb(215, 86, 8);
+    font-size:24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-wrapper-more{
+    margin: auto;
+    width: 100%;
+    display: none;
+    background-color:rgb(215, 86, 8);
+    font-size:24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-child{
+    border-bottom: 1px solid white;
+    padding: 20px 20px 20px 20px;
+    color: white;
+}
+
+.nav-child:hover{
+    background-color: rgb(203, 85, 14);
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.search{
+    margin-left: 35%;
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    margin-top: 0px;
+
+}
+
+.search input[type=text] {
+    font-size: 17px;
+}
+
+.search button img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.btn-list{
+    display: flex;
+    margin-left: 5%;
+}
+
+.btn-list li{
+    list-style: none;
+}
+
+.login-register-btn{
+    padding: 0 30px;
+    line-height: 53px;
+    background-color: rgb(236, 106, 25);
+    color:  white;
+    border: none;
+    margin: 3px;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+}
+
+.login-register-btn:hover{
+    background-color: rgb(243, 143, 81);
+
+}
+
+.content{
+    min-height: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-left: 1px solid rgb(238, 152, 103);
+    border-right: 1px solid rgb(238, 152, 103);
+}
+
+.question-header{
+    display: flex;
+    border-bottom: 5px solid rgb(238, 152, 103);
+}
+
+.question-header h1{
+    display: block;
+    
+}
+
+.question-header-detailed{
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.ask-btn {
+    padding: 30px 30px 30px 30px;
+    height: 40px;
+    width: 40px;
+}
+
+.ask-question-btn {
+    background-color: rgb(236, 106, 25);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.ask-question-btn:hover {
+    background-color: rgb(243, 143, 81);
+
+}
+
+.question-detail{
+    position: relative;
+    width: 100%;
+    background-color:  rgb(246, 243, 241);
+    font-weight: normal;
+    margin-bottom: 3%;
+}
+
+.question-information{
+    position: relative;
+    display: flex;
+    font-weight: normal;
+    overflow: unset;
+}
+
+.question-creator{
+    margin-right: 1%;
+    padding-right: 2%;
+}
+
+.question-view{
+    margin-right: 1%;
+    padding-right: 2%;
+}
+
+.answers{
+    font-size: 20px;
+}
+
+.answers-num{
+    width: 100%;
+    border-bottom: 5px solid rgb(238, 152, 103);
+}
+
+.answers-container{
+    border-bottom: 1px solid rgb(238, 152, 103);
+}
+
+@media only screen and (max-width:500px){
+    .header{
+        width: 100%;
+        display: block;
+    }
+    nav{
+        width: 0%;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .nav-item{
+        width: 50%;
+    }
+    .description{
+        margin: 0;
+    }
+    .question-header{
+        display:block;
+    }
+    .description{
+        margin-left: 10%;
+    }
+    .btn-list{
+        margin-left: 35%;
+        display: flex;
+    }
+    .login-register-btn{
+        padding: 0 15px;
+        line-height: 20px;
+        background-color: rgb(236, 106, 25);
+        color:  white;
+        border: none;
+        margin: 3px;
+        cursor: pointer;
+        position: relative;
+    }
+}
